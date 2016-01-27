@@ -1,0 +1,25 @@
+{
+  "name": "socket-io-mocks",
+  "version": "0.1.0",
+  "description": "Very basic mocks for socket.io.",
+  "author": "Philippe \"tehwalris\" Voinov",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo No tests yet; exit 0"
+  },
+  "keywords": [
+    "socket.io",
+    "mocks",
+    "testing"
+  ],
+  "homepage": "https://github.com/tehwalris/socket-io-mocks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tehwalris/socket-io-mocks.git"
+  },
+  "dependencies": {
+    "sinon": "^1.17.2",
+    "lodash": "^4.0.0"
+  }
+}
