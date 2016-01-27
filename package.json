@@ -1,12 +1,13 @@
 {
   "name": "socket-io-mocks",
   "version": "0.1.0",
-  "description": "Very basic mocks for socket.io.",
+  "description": "Basic mocks for socket.io using sinon.",
   "author": "Philippe \"tehwalris\" Voinov",
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo No tests yet; exit 0"
+    "test": "npm run unitTest",
+    "unitTest": "mocha test/unit --recursive"
   },
   "keywords": [
     "socket.io",
@@ -21,5 +22,11 @@
   "dependencies": {
     "sinon": "^1.17.2",
     "lodash": "^4.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "proxyquire": "^1.7.3",
+    "sinon-chai": "^2.8.0"
   }
 }
