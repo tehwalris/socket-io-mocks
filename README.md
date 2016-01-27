@@ -1,5 +1,5 @@
 # socket-io-mocks
-[![Build Status](https://travis-ci.org/tehwalris/walris-central.svg?branch=master)](https://travis-ci.org/tehwalris/walris-central)
+[![Build Status](https://travis-ci.org/tehwalris/socket-io-mocks.svg?branch=master)](https://travis-ci.org/tehwalris/socket-io-mocks)
 
 Basic mocks for [socket.io](http://socket.io/) using [sinon](http://sinonjs.org/).
 
