@@ -6,9 +6,8 @@ Basic mocks for [socket.io](http://socket.io/) using [sinon](http://sinonjs.org/
 Server:
 ```javascript
 var Server = require('socket-io-mocks').server;
-let io = new Server('testUrl'), handler = sinon.spy();
-expect(Server.calledWith('testUrl')).to.be.true; //it's a sinon spy
-io.on(connection, handler);
+let io = new Server() /*this is a sinon spy*/, handler = sinon.spy();
+io.on('connection', handler);
 let socket = io._connect(); //See socket mock below
 expect(handler.calledWith(socket)).to.be.true;
 ```
@@ -16,7 +15,8 @@ expect(handler.calledWith(socket)).to.be.true;
 Client:
 ```javascript
 var Client = require('socket-io-mocks').client;
-let socket = new Client();
+let socket = new Client('testUrl');
+expect(Client.calledWith('testUrl')).to.be.true; //it's a sinon spy
 expect(socket).to.equal(Client._socket); //See socket mock below
 ```
 
