@@ -1,6 +1,6 @@
 {
   "name": "socket-io-mocks",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Basic mocks for socket.io using sinon.",
   "author": "Philippe \"tehwalris\" Voinov",
   "license": "MIT",
