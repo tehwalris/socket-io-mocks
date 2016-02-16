@@ -4,6 +4,7 @@ var sinon = require('sinon'),
 
 class IO {
   constructor () {
+    this.close = sinon.spy();
   }
 
   _connect (socket) {

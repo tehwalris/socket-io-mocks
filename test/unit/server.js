@@ -47,5 +47,8 @@ describe('server', function () {
       expect(io._connect()).to.equal(socket);
       expect(handler).to.have.been.calledWith(socket);
     });
+    it('has a close spy', function () {
+      expect(io.close).not.to.have.been.called;
+    });
   });
 });
